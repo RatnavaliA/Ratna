@@ -1,0 +1,45 @@
+package test;
+
+public class student{
+	int studentId;
+	String studentName;
+	double marks;
+	char grade;
+
+	public student(int studentId, String studentName, double marks) {
+		this.studentId = studentId;
+		this.studentName = studentName;
+		this.marks = marks;
+		calculateGrade();
+	}
+
+	public void calculateGrade() {
+		if (marks >= 90 && marks <= 100) {
+			grade = 'A';
+		} else if (marks >= 80 && marks < 90) {
+			grade = 'B';
+		} else if (marks >= 70 && marks < 80) {
+			grade = 'C';
+		} else if (marks >= 60 && marks < 70) {
+			grade = 'D';
+		} else {
+			grade = 'F';
+		}
+	}
+	public void displayStudentInfo() {
+		System.out.println("Student ID: " + studentId);
+		System.out.println("Student Name: " + studentName);
+		System.out.println("Marks: " + marks);
+		System.out.println("Grade: " + grade);
+		System.out.println();
+	}
+
+	public static void main(String[] args) {
+		student student1 = new student(1, "Ratna", 95);
+		student student2 = new student(2, "Ram", 85);
+		student student3 = new student(3, "Padma", 75);
+		student1.displayStudentInfo();
+		student2.displayStudentInfo();
+		student3.displayStudentInfo();
+	}
+}

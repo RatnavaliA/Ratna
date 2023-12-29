@@ -1,0 +1,14 @@
+package Practice;
+
+public class InstanceVariablesPractice {
+	int id=101;
+
+	public static void main(String[] args) {
+
+		InstanceVariablesPractice InstanceVariablesPractice = new InstanceVariablesPractice() ;
+
+		System.out.println(InstanceVariablesPractice.id);
+
+	}
+
+}

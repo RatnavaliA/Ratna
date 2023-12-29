@@ -1,0 +1,24 @@
+package ifstatements;
+
+import java.util.Scanner;
+
+public class DayName {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter the DayName: ");
+		String name=scanner.nextLine();
+		
+		if(name=="Sunday"||name=="Saturday")
+		{
+			System.out.println("Yayy,Its a Weekend");
+		}
+		else
+		{
+		System.out.println("Uff,Its a Weekday");
+		}
+		
+
+	}
+
+}

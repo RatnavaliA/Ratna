@@ -1,0 +1,21 @@
+package ifstatements;
+
+import java.util.Scanner;
+
+public class ConditionalStatements {
+
+	public static void main(String[] args) {
+		int number;
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Please Enter the Number:");
+		number=scanner.nextInt();
+		if(number%2==0) {
+			System.out.println("Given number is EvenNumber:"+number);
+		}
+		else {
+		System.out.println("Given number is OddNumber:"+number);
+	}
+
+	}
+//Scanner.close();
+}

@@ -1,0 +1,29 @@
+package dec262023;
+
+		public class Student {
+		     static String collegeName;
+		     int registrationNum;
+		     String studentName;
+		    public static void setCollegeName(String name) {
+		        collegeName = name;
+		    }
+		    public Student(int registrationNum, String studentName) {
+		        this.registrationNum = registrationNum;
+		        this.studentName = studentName;
+		    }
+		    public void displayStudentInfo() {
+		        System.out.println("College Name: " + collegeName);
+		        System.out.println("Registration Number: " + registrationNum);
+		        System.out.println("Student Name: " + studentName);
+		        System.out.println();
+		    }
+
+		    public static void main(String[] args) {
+		        Student.setCollegeName("Siddhartha College");
+		        Student student1 = new Student(101, "Ram");
+		        Student student2 = new Student(102, "Adi");
+		        Student student3 = new Student(103, "Karthik");
+		        student1.displayStudentInfo();
+		        student2.displayStudentInfo();
+		        student3.displayStudentInfo();
+		    }

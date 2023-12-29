@@ -1,0 +1,26 @@
+package ifstatements;
+
+import java.util.Scanner;
+
+public class GradingSystem {
+
+	public static void main(String[] args) {
+		Scanner scannner=new Scanner(System.in);
+		System.out.println("Plz Enter the Input");
+		int result=scannner.nextInt();
+        if (result<35) {
+	System.out.println("Result : FAIL");
+}
+else {
+	System.out.println("Result : PASS");
+	if (result>=35 && result<=70) {
+		System.out.println("Grade : THIRD CLASS");
+	}else {
+		if (result>=71 && result<=85) {
+			System.out.println("Grade : SECOND CLASS");
+		}
+		else {
+			System.out.println("Grade : FIRST CLASS");
+		}
+	}}
+	}}
